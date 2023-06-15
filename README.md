@@ -4,6 +4,8 @@
 
 In this project, I explored the performance of two clustering algorithms, namely KMeans and DBSCAN, on a high-dimensional dataset. The project involved conducting PCA to reduce the dimensionality of the data, fitting the models, visualizing the clusters, and assessing the similarities between the clusters formed by the two methods.
 
+![](plots/histogram_plot.png)
+
 ## Data Preprocessing
 
 Before diving into the clustering analysis, I first prepared the dataset by performing normalization to ensure that all features were on the same scale. I used the StandardScaler from the sklearn library for this process. 
@@ -14,6 +16,8 @@ The other normalizations schemas are left in the notebook.
 Given the high dimensionality of the dataset, I applied Principal Component Analysis (PCA) to reduce the dimensions to seven for work and three for easier visualization and efficient computation.
 
 ## Clustering Analysis
+
+![](plots/3dplot.png)
 
 ### KMeans
 
