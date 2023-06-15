@@ -31,14 +31,10 @@ To visualize the inter-cluster similarities within each method, I calculated and
 
 ## Conclusions
 
-The experiments showed that both methods produced meaningful clusters, though with differences in their structures. The two methods revealed different aspects of the data due to their different underlying algorithms. 
+The experiments showed that both methods did not provide meaningful clusters according to db index or silhouette score.
 
 It's worth noting that the performance of these clustering methods could be influenced by several factors including the appropriateness of the chosen clustering method for the specific dataset, the normalization schema, and computational constraints affecting the search for optimal parameters.
 
 Despite the challenges, the winning solution for this task was not from either of these algorithms, but rather a custom Gaussian Mixture Model (GMM). This GMM model accounted for the specific structure in the data, dividing it into 42 clusters, structured as 7 groups of 6 clusters each. The implementation involved a custom Expectation Maximization (EM) algorithm, taking into account the details of the data structure and hardcoding means of all the floating point variables to ensure convergence to true cluster centers. This highlights the importance of understanding the underlying data structure in clustering tasks.
 
-For future works, the cluster quality could potentially be improved by exploring other clustering methods such as Gaussian Mixture Models or Spectral Clustering, revising the normalization schema, and harnessing more computational power to optimize the parameters for the clustering methods. Furthermore, feature engineering or feature selection could be employed to enhance the performance of the clustering algorithms. 
-
-In conclusion, this project provided valuable experience in applying and comparing clustering methods on a high-dimensional dataset. The results illustrate
-
- the complexity of unsupervised learning tasks and underscore the importance of understanding the algorithms and the underlying data.
+For future works, the cluster quality could potentially be improved by exploring other clustering methods such as Gaussian Mixture Models or Spectral Clustering, revising the normalization schema, and harnessing more computational power to optimize the parameters for the clustering methods. Furthermore, feature engineering or feature selection could be employed to enhance the performance of the clustering algorithms.
